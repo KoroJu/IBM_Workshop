@@ -1,0 +1,5 @@
+ applications:
+ - name: pedantic-aryabhata
+   memory: 256M
+   host: pedantic-aryabhata
+   buildpack: staticfile_buildpack
