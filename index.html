@@ -7,7 +7,17 @@
   </head>
   <body>
     <div class="textdesign">
-      The content of the document... change
+      <input type="button" name="counter" value="+1" onclick="countUp()"> Click me to count
+      <script type="text/javascript">
+        function countUp(){
+          var feld = document.getElementById("counting");
+          var x = feld.innerHTML;
+          x++;
+          feld.innerHTML = x;
+        }
+      </script>
+      <br></br>
+      <textarea id="counting" name="counting" rows="2" cols="10">0</textarea>
     </div>
   </body>
 </html>
